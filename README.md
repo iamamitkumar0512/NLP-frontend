@@ -1,15 +1,33 @@
-# Udacity-Project-NLP
-Project of Front-End Web Developer Nanodegree program at Udacity.
+# News Article NLP
 
-This project was built based on a single page framework provided by Udacity. The framework code can be found [here](https://github.com/udacity/fend/tree/refresh-2019).
+This frontend application uses Aylien NLP service to analyze text and article links.
 
-Used [here](https://meyerweb.com/eric/tools/css/reset/) for reset_style.scss.
 
-The following tasks were completed in this project:
-- Node.js environment.
-- Apply SCSS styles.
-- Set webpack.
-- Aylien API.
-- Display API results.
-- Implement service workers.
-- Test JS code with Jest.
+### Prerequisites
+
+You need `node` and `npm` installed on your system to be able to run and build this project.
+
+### Installing
+
+To install all the project dependencies run:
+```bash
+npm install
+```
+
+
+## Deployment
+
+To create an optimized front-end build for development, run:
+```bash
+npm run build
+```
+
+To run the server in production mode, run:
+```bash
+npm run start
+```
+
+## Built With
+
+* [Express](https://expressjs.com/) - NodeJS Back-End server
+* [Webpack](https://webpack.js.org/) - Front-End code bundler
