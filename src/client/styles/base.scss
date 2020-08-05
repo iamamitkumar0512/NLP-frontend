@@ -1,0 +1,23 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #cccccc;
+	background-color: #444;
+}
+
+main {
+	flex: 2;
+
+	section{
+		&:last-child{
+			flex-direction: column;
+		}
+	}
+}
+
+section {
+	display: flex;
+	max-width: 780px;
+	margin: 45px auto;
+}

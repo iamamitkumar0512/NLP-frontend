@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<head>
+		<meta charset="utf-8">
+		<title>KITS Article NLP</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1 id="App_name">KITS Article NLP</h1 id="App_name">
+		</header>
+
+		<main>
+			<section>
+				<form id="articleURLForm" onsubmit="return App.handleSubmit( event )" autocomplete="off">
+					<input id="URL" type="text" name="input" value="" placeholder="PLEASE ENTER URL">
+					<input type="submit" name="" value="Submit" onclick="return App.handleSubmit( event )" onsubmit="return App.handleSubmit( event )">
+				</form>
+			</section>
+
+			<section>
+				<div>
+					<strong>Article Classification:</strong>
+				</div>
+				<div id="Results"></div>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2020 AMIT KUMAR</p>
+			<p><a href="https://www.facebook.com/profile.php?id=100036303918297">Facebook</a></p>
+			<p><a href="https://twitter.com/Amitkum30519657">Twitter</a></p>
+			<p><a href="https://www.instagram.com/i_.am_.amitkumar/">Instagram</a></p>
+			<p>Text and data analysis provided by <a href="https://aylien.com" target="_blank">Aylien</a></p>
+		</footer>
+
+		<script>
+			// Make sure service workers are supported in user's browser
+			if( 'serviceWorker' in navigator ){
+
+
+				window.addEventListener( 'load', () => {
+					navigator.serviceWorker.register( '/service-worker.js' );
+				});
+
+			}else{
+
+				console.log( "Service Workers feature is not supported in your browser." );
+
+			}
+		</script>
+	<script type="text/javascript" src="main.js"></script></body>
+
+</html>
